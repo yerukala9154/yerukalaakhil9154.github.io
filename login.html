@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="text" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+    <p>Don't have an account? <a href="register.html">Create Account</a></p>
+  </form>
+</div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  
+  var users = JSON.parse(localStorage.getItem('users')) || [];
+
+  
+  var loggedInUser = users.find(function(user) {
+    return user.email === email && user.password === password;
+  });
+
+  if (loggedInUser) {
+    
+    window.location.href = 'homepage.html';
+  } else {
+    
+    alert('Incorrect email or password. Please try again.');
+  }
+});
+</script>
+
+</body>
+</html>

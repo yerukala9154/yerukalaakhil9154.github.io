@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.nav-logo {
+    width: 80px;
+    height: 70px;
+}
+
+
+.navbar {
+    z-index: 700;
+}
+nav a:hover{
+    background-color: #0d7814 !important;
+    border-radius: 8px;
+    color: white !important;
+
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+#navItem5 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+#navItem6 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+.nav-link.active {
+    background-color: #0d7814;
+    color: white !important;
+    border-radius: 8px;
+}
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+    }
+   
+    .login-btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.6rem 2rem;
+    border-radius: 0.375rem;
+    border: 1px solid #dee2e6;
+    color: #000;
+    transition: background-color 0.3s;
+    }
+   
+    .login-btn:focus {
+    box-shadow: 0 0 0 0.25rem rgb(0 123 255 / 25%);
+    }
+   
+    .login-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    }
+   
+    .login-btn:active {
+    background-color: #0069d9;
+    color: #fff;
+    }
+    
+.solutions-page{
+    padding-top:120px;
+}
+.image-solution {
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+}
+
+.description {
+    font-family: "Roboto";
+    font-size: 28px;
+    margin-top: 20px;
+
+}
+
+.page-heading {
+    color: #183b56;
+    font-size: 46px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.container-card {
+    background-color: #f9fbfe;
+}
+
+.solution-card-image {
+    height: 250px;
+    width: 250px;
+}
+
+.solution-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.solution-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.solution-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+
+.contact {
+    padding-bottom: 50px;
+}
+
+#contact_form .form-input {
+    border: 1px solid #e4e4e4;
+}
+
+.media-right-margin {
+    margin-right: 25px;
+}
+
+input {
+    height: 42px;
+    padding: 0 1rem;
+    background: #fff;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+}
+
+#contact_form textarea {
+    resize: none;
+    padding: 1rem;
+    height: 150px;
+    background: #fff;
+    border: 0;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-grad {
+    padding: .7rem 2rem;
+    display: inline-block;
+    color: #fff;
+    border-radius: 2rem;
+    border: 0;
+    background: #7a60ff;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    cursor: pointer;
+}
+
+.contact-info {
+    padding: 2rem 2rem 1rem;
+    border-radius: 8px;
+    background: #7a60ff;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+}
+
+.contact-item {
+    margin: 23px 0px;
+}
+
+.contact-item i {
+    font-size: 20px;
+}
+
+.contact-item p {
+    line-height: 20px;
+    margin: 0;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
+.elementor-grid-item {
+    padding: 10px;
+}
+
+.follow-us-icon-container {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: white;
+    font-size: 35px;
+}
+
+.sub-heading {
+    font-family: "Roboto";
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.main-heading {
+    color: #183b56;
+    font-size: 42px;
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: center
+}
